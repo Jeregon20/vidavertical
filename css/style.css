@@ -498,7 +498,7 @@ iframe{
       }
       .slider-content{
       
-      background-image: url(file:///C:/Users/rusit/OneDrive/Escritorio/VIDA%20VERTICAL//assets/undraw_blooming_re_2kc4.svg);
+      background-image: url(../assets/undraw_blooming_re_2kc4.svg);
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size:contain;
@@ -553,7 +553,7 @@ iframe{
         border: none;
     }
     .card-contain{
-        background-image: url(file:///C:/Users/rusit/OneDrive/Escritorio/VIDA%20VERTICAL//assets/Imagen\ de\ WhatsApp\ 2023-08-014.jpg);
+        background-image: url(../assets/Imagen\ de\ WhatsApp\ 2023-08-014.jpg);
         
         background-attachment: fixed;
         background-repeat: no-repeat;
