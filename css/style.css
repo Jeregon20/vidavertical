@@ -524,57 +524,28 @@ iframe{
         
     }
     
-  .slider-product{
-    width: 500px;
+    .s-page-buy {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
   }
-
   
 
-  .s-page-buy {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
+  
   /* Establece el ancho máximo para el contenedor del carrusel */
   .slider-product {
-    max-width: 400px; /* Ajusta el valor según tus necesidades */
+      max-width: 500px; /* Ajusta el valor según tus necesidades */
   }
-
+  
   /* Alinea los botones del carrusel horizontalmente */
   .carousel-control-prev,
   .carousel-control-next {
-    align-self: center;
+      align-self: center;
   }
-     
-     
-      .p-h1{
-      
-        text-align: center;
-      }
-      .slider-product{
-        margin: 0 50px 30px 30px;
-        
-    
-        }
-        .img-product
-        {
-            border-radius: 7%;
-           
-        }
-      .btn-acordeon{
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        margin: 0 10px;
-        justify-content: center;
-      
-       
-      }
-    
-       .btn{
-      align-items: end;
+  
+  /* Estilo para el botón "Comprar" */
+  .btn {
       font-family: 'Archivo', sans-serif;
       font-weight: 0;
       font-size: 16px;
@@ -584,33 +555,27 @@ iframe{
       border: solid #38684a;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
       border-radius: 1rem;
-      transition : 500ms;
-      transform: translateY(0);
       cursor: pointer;
-      }
-      
-      .btn:hover{
-      
-      transition : 500ms;
+  }
+  
+  .btn:hover {
       padding: 10px 50px;
-      transform : translateY(-0px);
       background-color: #fff;
       color: #38684a;
       border: solid 2px #38684a;
-      }
+  }
+  
+  /*ACORDEON*/
+  .acordeon-a {
+      background-color: #38684A;
+      color: #fff;
       
-      
-    /*ACORDEON*/
-    
-      
-      .acordeon-a{
-        background-color: #38684A;
-        color: #fff;
-       
-      }
-      .acordeon-d::after{
-        background-color: #18181a;
-      }
+  }
+  
+  /* Ajusta el acordeón para evitar que afecte al carrusel */
+  
+  
+     
      
    .about__row {
         display: flex; /* Utilizamos Flexbox para crear una fila */
