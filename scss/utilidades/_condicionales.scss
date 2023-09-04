@@ -1,0 +1,13 @@
+
+
+@mixin condicion($color-btn){
+    background-color: $color-btn;
+
+    @if $color-btn == green {
+        border: 3px solid black;
+        color: pink;
+    } @else{
+        border: 2px solid white;
+        color: salmon;
+    }
+}
