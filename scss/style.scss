@@ -6,42 +6,43 @@
 @import "utilidades/extend";
 @import "utilidades/condicionales";
 
-body{
-     background-color: white;
-.hero{
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    background-color: $color-principal;
-    .bg-nav{
-        .container-fluid{
-            .nav__logo{
-                width: 20%;
-                .bg-s{
-                
-                .nav-toggler-icon{
-                }
-            }
-            
-              .navbar-nav{
-                .navbar-collapse{
-                    .navbar-nav{
-                .nav__item{
-                    text-align: center;
-                    color: #dbdbdb;
-                }
-               
-              }
-             
+body {
+    background-color: white;
+  
+    .hero {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column; /* Agregar flex-direction: column para centrar elementos verticalmente */
+      align-items: center;
+      justify-content: center; /* Agregar justify-content: center para centrar elementos horizontalmente */
+      background-color: $color-principal;
+  
+      .bg-nav {
+        .container-fluid {
+          .nav__logo {
+            width: 20%;
           }
-          
-                                                                       
-                                    }
-                                  }
-                                }
-                              }
-                           }
-                                
-                         }
+  
+          .navbar-nav {
+            .navbar-collapse {
+                .navbar-nav{
+                text-align: center;
+                
+                .nav__item {
+                  text-align: center;
+                  
+                  .nav-link{
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
                
                       
             
@@ -98,12 +99,30 @@ body{
        .card-contain{
         margin: 15%;
         .flex-card{
+            border-radius: 1rem 1rem 1rem;
+            padding: 5%;
+            box-shadow: .3rem 1rem 2rem rgb(91, 126, 91);
+            .card-img-top{
+                padding: 1%;
+                border-radius: 1rem 1rem;
+            }
             .card-body{
+              
         .card-title{
          text-align: center;
+         font-family: 'Poppins';
+         font-size: 1.5rem;
+         color: $color-principal;
         }
          .card-text{
              font-size:1.2rem!important ;
+             text-align: center;
+             padding: 1rem;
+             font-family: 'Poppins';
+         }
+         .hr-card{
+            padding-top: 1rem;
+           
          }
              .btnn-card{
                     margin-left: 35%;
@@ -121,88 +140,72 @@ body{
 /* NOSOTROS  */
 
 
-
-
-.about__img{
-   
-   
-    padding-top: 5%;
-    padding-bottom: 10%;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 50%;
-    background-attachment: fixed;
-
-    .h2-nosotros{
-        margin-left: 8%;
-        text-align: center;
-        color: rgb(129, 13, 13);
-        font-size: 3rem;
-        font-family: 'Poppins', sans-serif;
-
-        .p-nosotros{
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-            color: $color-secundario;
-            margin: 0 5%; /* Elimina el margen predeterminado del párrafo */
-           
-            margin-bottom: 20%;
-            padding: 0; /* Elimina el relleno predeterminado del párrafo */
-           
-            box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
-            
-        }
-        
-       
+.about__row{
+    .about__img{
+         padding-top: 5%;
+         padding-bottom: 10%;
+         display: block;
+         margin: 0 auto;
+         width: 100%;
+         aspect-ratio: 1/1;
+         object-fit: cover;
+         object-position: top;
+         border-radius: 50%;
+          background-attachment: fixed;
     }
-}
+    .container{
+            .row-6{
+             margin-left: 1%;
+            text-align: center;
+            color: rgb(129, 13, 13);
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif;
+            }
+                .row-12{
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                color: $color-secundario;
+                margin: 0 5%; /* Elimina el margen predeterminado del párrafo */
+                margin-top: 10%;
+                margin-bottom: 20%;
+                padding: 0; /* Elimina el relleno predeterminado del párrafo */
+                box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+            }
+        }
+       }
+    
+
 
 
 /* OBJETIVOS */
 
 .objetivos__main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-        .objetivos__img{
-         width: 100%;
-         height: 90%;
-            .objetivos__texts, .h2-objetivos, .p-objetivos{
-             padding:10% 0;
-             font-family: 'Poppins', sans-serif;
-             flex-direction: column;
-             align-items: center;
-             font-size: 1.3rem;
-             margin-bottom: 3rem;
-             color: #fff;
     
-            .h2-objetivos{
+    height: 100vh;
+    .container-fluid{
+        text-align: center;
         
-            text-align: center;
-            color: rgb(129, 13, 13);
-            font-size: 3rem;
-            font-family: 'Poppins', sans-serif;
-    
-                .p-objetivos{
-                 font-family: 'Poppins', sans-serif;;
-                 text-align: center;
-                 color: $color-secundario;
-                 margin: 0 5%; /* Elimina el margen predeterminado del párrafo */
-                 margin-bottom: 20%;
-                 padding: 0; /* Elimina el relleno predeterminado del párrafo */
-                 box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
-                            
-                }
-              }
-            }
-         }    
+        
+        .col-6{
+          margin-top: 10%;
+          color: $color-principal;
+          margin-left: 7rem;
+          top: 20%;
+          font-size: 3rem;
+        }
+        .col-12{
+         font-family: sans-serif;
+         top: 10%;
+         
+        }
+        .objetivos__img{
+            width: 100%;
+            height: 90%;
+        }
+      
+            
    }
+}
   
  /*PAGINA DE COMPRA*/
 
@@ -211,49 +214,47 @@ body{
     font-size: 1,5rem;
     margin:0;
     font-family: 'Courier New', Courier, monospace;
-    
-    .b-btn{
-        margin: 0;
-
-      .page-buy{
-        transition: all ease .55s;
-            
+    background-color: white;
+    .btn-acordeon{
         .p-h1{
-        margin: 7%;
+            font-family: 'Poppins',sans-serif;
+            margin: 10%;}
+            .btn{
+                margin-left: 25% ;
+               font-family: 'Archivo', sans-serif;
+               font-weight: 0;
+               font-size: 1rem;
+               padding: 2% 15%;
+               color: #fff;
+               background-color: $color-principal;
+               border: solid $color-principal;
+               box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem  1rem;
+               border-radius: 1rem;
+               cursor: pointer;
+               }
+               .btn:hover{
+                padding: 2% 15%;
+                background-color: #fff;
+                color: $color-principal;
+               border: solid $color-principal;
+                                 } 
+       
+                                }                
 
         .slider-product{
-         margin: 5%;
-                       
+         margin: 7%;
+                .carousel-indicators{    
         .img-product
                 {
           border-radius: 7%;
+          padding: 10%;
                         
-            .btn{
-             margin-left: 25% ;
-            font-family: 'Archivo', sans-serif;
-            font-weight: 0;
-            font-size: 1rem;
-            padding: 2% 15%;
-            color: #fff;
-            background-color: $color-principal;
-            border: solid $color-principal;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-            border-radius: 1rem;
-            cursor: pointer;
-        
-            .btn:hover{
-             padding: 2% 15%;
-             background-color: #fff;
-             color: $color-principal;
-            border: solid $color-principal;
-                              } 
-                           }
-                       }
-                    }
+                }
+                 
                 }
             }
-       }
-  }
+
+        }
  
 /*ACORDEON*/
 
@@ -276,6 +277,7 @@ body{
   /* footer */
 .footer{
     background-color:  $color-principal;
+    z-index: 2000;
 
  .footer__container {
         height: 10%;
@@ -313,7 +315,7 @@ body{
                 }
             }
         }
-    }
+   
                 .f-d{
                 color: white;
                 font-size:1em ;
@@ -324,13 +326,14 @@ body{
                     height: 100%;
                     margin-top: 5%;
                     margin-bottom: 10%;
+                    z-index: 2000;
                 }
                              .wsp{
                              position: fixed;
-                             bottom: 50%;
+                             bottom: 10%;
                              left: 87%;
-                             z-index: 10000;
-                             box-shadow: 10% black;
+                             z-index: 500;
+                             
                                             
                              }
 
@@ -341,7 +344,7 @@ body{
                                     text-decoration: none;
                                  }
                                                     
-                                             
+                                }                                         
                                             
                                
                         
@@ -364,41 +367,44 @@ body{
         border-radius: 5%;
         box-shadow: 0 0 5rem  $color-secundario;
         padding: 7%;
-
+       form{
         .form-group {
             margin-bottom: 5rem;
 
-            .form-group label {
+            .form-group , label {
                 display: block;
                 margin-bottom: 1rem;
                 font-weight: 600;
-                
-                .form-group input,
+            }
+                .form-group input{
                 .form-group textarea {
-                 display: block;
-                 width: 100%;
+                        display: block;
+                        width: 100%;
                         padding: .5rem;
                         border-radius: 5%;
                         border: none;
                         background-color: #f2f2f2;
-
+                }
+            }
+            }
                                                             
                     .animated-button {
-                     margin: 0 15%;
+                     margin: 0 20%;
                      background-color:  $color-principal;
                      color: #dbdbdb;
                      border: none;
-                     border-radius: 10% 10%;
-                     padding: 5% 20%;
+                     border-radius: 1rem 1rem 1rem;
+                     padding: 1% 20%;
                      font-size: 1rem;
-                            
+                    }   
                      .animated-button:hover{
                       background-color: white;
-                      border: solid  $color-secundario;
+                      transition: all ease .11s;
+                      border: solid $color-secundario;
                       color:  $color-principal;
-                      padding: 5% 20%;
-                      border-radius: 10% 10%;
-                       font-size: 1rem;
+                      padding: 1% 20%;
+                      border-radius: 1rem 1rem 1rem;
+                      font-size: 1rem;
 
                             }
                         }
@@ -406,11 +412,9 @@ body{
 
               }
               
-          }
+            
           
-      }
-      
-  }
+    
   
   @media (min-width:768px) {
 
@@ -663,16 +667,8 @@ body{
                                                                         width: 80%;
                                                                         display: flex;                                                       
                                                                                                                   
-                                                                        .wsp{
-                                                                            position: fixed;
-                                                                            bottom: 50%;
-                                                                            left: 85%;
-                                                                            z-index: 10000;
-                                                                            box-shadow: 10px black;
-                                                                            .wsp-h1{
-                                                                                font-size: 1rem;
-                                                                                color: #18181a;
-                                                                                padding: 3rem 0;
+                                                                      
+                                                                           
                                                                                 hr{
                                                                                     color: #fff;
                                                                                     iframe{
@@ -695,85 +691,6 @@ body{
                                     }
                                 }
                             }
-                        }
-                    }                                            
+                                                     
                                                                                                                                                         
                                                                                                                                                                               
-                                            
-
-                                                                                              
-
-                                                                                                   
-
-
-                                                                                                        
-                                                                                                                                         
-                                               
-                        
-
- 
-   
- 
-
-    
-
-
-
-
-
-    
-
-
-    
-
-  
-
-  
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-
-
-  
-
-  
-
-
-
-
-
-
-     
-            
-         
-
-
-
-   
-
-
-
-
-
-
