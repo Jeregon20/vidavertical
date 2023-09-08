@@ -10,12 +10,14 @@ body {
     background-color: white;
   
     .hero {
+    
       font-family: 'Poppins', sans-serif;
       display: flex;
       flex-direction: column; /* Agregar flex-direction: column para centrar elementos verticalmente */
       align-items: center;
       justify-content: center; /* Agregar justify-content: center para centrar elementos horizontalmente */
       background-color: $color-principal;
+      
   
       .bg-nav {
         .container-fluid {
@@ -417,67 +419,86 @@ body {
     
   
   @media (min-width:768px) {
-
-    .hero{
-    
-    z-index: 1000;
-    display: block;
-
-    .bg-s{
+    body {
         background-color: white;
-       
-        .bg-nav{
-         background-color:  $color-principal;
-         display: flex;
-         align-items: center;
-
-     .nav__logo{
-        width: 150px;
-        margin: 0 400px;
-  
-        .nav__menu{
-        height: 100px;
-        width: 35px;
-        cursor: pointer;
-        z-index: 100;
-        border-radius: 5px;                    
-        
-        .nav__link{
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-            font-size: 18px;
+      
+        .hero {
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          flex-direction: column; /* Agregar flex-direction: column para centrar elementos verticalmente */
+          align-items: center;
+          justify-content: center; /* Agregar justify-content: center para centrar elementos horizontalmente */
+          background-color: $color-principal;
+      
+          .bg-nav{
+            background-color:  $color-principal;
+            display: flex;
             align-items: center;
-            position: relative;
-            padding-bottom: 8px;
-            margin: 0 15px;
-            color: #fff;
-            gap: 15px;
-            text-decoration: none;
-                                                            
-            .nav__link::after { 
-            color: white;
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #ffffff;
-            transition: width 0.3s ease;
-
-                .nav__link:hover::after {
-                  background-color: #ffffff;
-                  width: 100%; 
-                      }    
-                   }
+            .container-fluid {
+                .nav__logo{
+                    width: 150px;
+                    margin: 0 400px;}
+      
+              .navbar-nav {
+                .navbar-collapse {
+                    .nav__menu{
+                        height: 100px;
+                        width: 35px;
+                        cursor: pointer;
+                        z-index: 100;
+                        border-radius: 5px;  
+                    
+                    .nav__item {
+                      text-align: center;
+                      
+                      .nav__link{
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 18px;
+                        align-items: center;
+                        position: relative;
+                        padding-bottom: 8px;
+                        margin: 0 15px;
+                        color: #fff;
+                        gap: 15px;
+                        text-decoration: none;
+                                                                        
+                        .nav__link::after { 
+                        color: white;
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: #ffffff;
+                        transition: width 0.3s ease;
+            
+                            .nav__link:hover::after {
+                              background-color: #ffffff;
+                              width: 100%; 
+                        
+                    }
+                  }
                 }
-             }
+              }
+            }
           }
+        }
       }
-  }
-}    
 
+
+}    
+ .autocontain{
+.autoslide-one{
+    top: 0;
+    margin-top: 40px;
+    margin-left: 500px;
+    height: 100px;
+    width: 1000px;
+   }
+}
     .slider-content{
       background-image: url(../assets/undraw_blooming_re_2kc4.svg);
       background-attachment: fixed;
@@ -485,13 +506,7 @@ body {
       background-size:contain;
       background-position: right;
 
-        .autoslide-one{
-         top: 0;
-         margin-top: 40px;
-         margin-left: 500px;
-         height: 100px;
-         width: 1000px;
-        }
+      
     }
                                              /* PRIMER SLIDER*/
         .img-s{
@@ -506,16 +521,25 @@ body {
            color:  $color-principal;
           }
         }
-    }                      
+    }      
+    .card-contain{
+        background-image: url("/assets/de\WhatsApp\2023-08-014.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: right center;
+        height: 500px;
+        width: 82vw;       
             .flex-card {
             margin: 100px 0;
             margin-left: 70px;
             box-shadow: 0px 0px 70px #18181a; 
             border-radius: 40px 40px;/* Ajusta la sombra según tus preferencias */
             display: flex;
+            flex-direction: row;
             width: 600px; /* Ajusta el ancho de la tarjeta */
             height: 600px; /* Ajusta la altura de la tarjeta */
-
+            .card-body{
+                flex-direction: row;
             .card-title{
             text-align: center;
               .card-text{
@@ -526,13 +550,7 @@ body {
                  margin-bottom: 5%;
                  background-color:  $color-principal;
                  border: none;                                                           
-                  .card-contain{
-                    background-image: url(../assets/de\WhatsApp\2023-08-014.jpg);
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    background-position: right center;
-                    height: 500px;
-                    width: 82vw;
+                
                     .s-page-buy {
                         display: flex;
                         flex-direction: row;
@@ -575,41 +593,39 @@ body {
 }
 
     /*ACORDEON*/
-                                .acordeon-a {
-                                    background-color:  $color-principal;
-                                    color: #fff;
-                                }
+                              
                                                     /* Ajusta el acordeón para evitar que afecte al carrusel */
                                     .about__row {
-                                    display: flex; /* Utilizamos Flexbox para crear una fila */
-                                    flex-direction: row;
-                                    .about__img{
-                                    width: 800px;
-                                    padding: 100px;
-                                    margin-left: 10px;
-                                    height: 1000px;   
+                                        display: flex;
+                                      flex-direction: row;
+                                  
                                          
-                                    article, .p-nosotros, .h2-nosotros {
+                                   .container {
                                         margin-top: 100px;
                                         margin-left: 10px;
                                         display: flex;
-                                        flex-direction: column;
-                                        align-items:center ;
-                                        text-align: center;
-                                            .p-nosotros{
+                                        flex-direction: row;
+                                        align-items: center;
+                                       
+                                        .about__img{
+                                            width: 100px;
+                                            padding: 100px;
+                                            margin-left: 10px;
+                                            height: 100px; }
+                                            .row-12{
                                            color:#831b1b;
                                            font-family:'Courier New', Courier, monospace;
                                            font-size: 20px;
-                                           .h2-nosotros{
+                                            }
+                                           .row-6{
                                             font-family:'Courier New', Courier, monospace;
                                             font-size: 90px;
                                             color: #000000; 
                                            }
                                         }
                                     }
-                                }
+                                
 
-                            }
 
                                             .objetivos__main{
                                                 background-image: url("../assets/Blowing rocket 3d cart.jpg");
@@ -689,8 +705,10 @@ body {
                                             }
                                         }
                                     }
-                                }
-                            }
-                                                     
+                                }              
                                                                                                                                                         
-                                                                                                                                                                              
+                            }
+                        
+                        }
+                    }
+           }
