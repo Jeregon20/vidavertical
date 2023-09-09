@@ -1,13 +1,15 @@
 
 
-$boton-standard:(
-    bg-standard:darkgreen,
-    color-standard:black,
-    border-standard: 1px solid black,
+$carousel-bgcolor:(
+    carousel-color:#0cd857,
+);
+
+$nosotros-img:(
+    nosotros-width:100%
     );
 
-$boton-premium:(
-    bg-premium:red,
-    color-standard:white,
-    border-standard: 2px solid yellow,
+$objetivos-img:(
+    objetivos-width: 100%,
+    objetivos-height: 90%,
     );
+

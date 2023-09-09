@@ -10,15 +10,7 @@ body {
     background-color: white;
   
     .hero {
-    
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      flex-direction: column; /* Agregar flex-direction: column para centrar elementos verticalmente */
-      align-items: center;
-      justify-content: center; /* Agregar justify-content: center para centrar elementos horizontalmente */
-      background-color: $color-principal;
-      
-  
+    @include flex;
       .bg-nav {
         .container-fluid {
           .nav__logo {
@@ -65,12 +57,7 @@ body {
         .slider-content{
             .c-slide{
             margin: 5%;
-                .carousel-indicators{
-                    
-                    .carousel-indicators button{
-                        background-color: red;
-                    }
-             }
+               
                     .carousel-inner{
                         .carousel-item{
                         .img-s{
@@ -84,17 +71,19 @@ body {
                         
             
                              .carousel-control-next-icon{
-                             background-color: #0cd857;
+                             background-color: map-get($carousel-bgcolor, carousel-color );
                              border-radius: 1rem;}
 
                              .carousel-control-prev-icon{
-                                 background-color: #0cd857;
+                                 background-color: map-get($carousel-bgcolor, carousel-color );
                                 border-radius: 1rem;
                     
                         }
                      } 
                    
-                
+             .contain{
+                display: none;
+             }   
       
 
 /*TARJETA LINK*/
@@ -109,18 +98,22 @@ body {
                 border-radius: 1rem 1rem;
             }
             .card-body{
-              
+                top: 10%;
         .card-title{
+        
          text-align: center;
-         font-family: 'Poppins';
+         font-family: nth( $fuentes, 1 );
          font-size: 1.5rem;
          color: $color-principal;
+         font-weight: bold;
         }
          .card-text{
+            
              font-size:1.2rem!important ;
              text-align: center;
              padding: 1rem;
-             font-family: 'Poppins';
+             font-family: nth( $fuentes, 1 );
+             font-weight: bold;
          }
          .hr-card{
             padding-top: 1rem;
@@ -148,7 +141,7 @@ body {
          padding-bottom: 10%;
          display: block;
          margin: 0 auto;
-         width: 100%;
+         width: map-get($nosotros-img, nosotros-width );
          aspect-ratio: 1/1;
          object-fit: cover;
          object-position: top;
@@ -161,10 +154,11 @@ body {
             text-align: center;
             color: rgb(129, 13, 13);
             font-size: 3rem;
-            font-family: 'Poppins', sans-serif;
+            font-family: nth( $fuentes, 1 );
+            font-weight: bold;
             }
                 .row-12{
-                font-family: 'Poppins', sans-serif;
+                font-family: nth( $fuentes, 1 );
                 text-align: center;
                 color: $color-secundario;
                 margin: 0 5%; /* Elimina el margen predeterminado del párrafo */
@@ -172,6 +166,7 @@ body {
                 margin-bottom: 20%;
                 padding: 0; /* Elimina el relleno predeterminado del párrafo */
                 box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+                font-weight: bold;
             }
         }
        }
@@ -194,15 +189,17 @@ body {
           margin-left: 7rem;
           top: 20%;
           font-size: 3rem;
+          font-weight: bold;
         }
         .col-12{
-         font-family: sans-serif;
+         font-family:nth( $fuentes, 2 );
          top: 10%;
+         font-weight: bold;
          
         }
         .objetivos__img{
-            width: 100%;
-            height: 90%;
+         width: map-get($objetivos-img, objetivos-width );
+         height: map-get($objetivos-img, objetivos-height);
         }
       
             
@@ -215,15 +212,15 @@ body {
     transition: all ease .55s;
     font-size: 1,5rem;
     margin:0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: nth( $fuentes, 4 );;
     background-color: white;
     .btn-acordeon{
         .p-h1{
-            font-family: 'Poppins',sans-serif;
+            font-family: nth( $fuentes, 1 );
             margin: 10%;}
             .btn{
                 margin-left: 25% ;
-               font-family: 'Archivo', sans-serif;
+               font-family: nth( $fuentes, 2 );
                font-weight: 0;
                font-size: 1rem;
                padding: 2% 15%;
@@ -423,15 +420,7 @@ body {
         background-color: white;
       
         .hero {
-        
-          font-family: 'Poppins', sans-serif;
-          display: flex;
-          flex-direction: column; /* Agregar flex-direction: column para centrar elementos verticalmente */
-          align-items: center;
-          justify-content: center; /* Agregar justify-content: center para centrar elementos horizontalmente */
-          background-color: $color-principal;
-          
-      
+        @include flex;
           .bg-nav {
             .container-fluid {
               .nav__logo {
@@ -469,15 +458,11 @@ body {
     .autocontain{
     
         .autoslide-one{
-            width: 900px;
-            margin-top: 3%;
-            height: 100px;
-            margin-bottom: 5%;
-            margin-left: 500px;
-            background-color: $color-principal;
+          @include autoslide;
         }
     }
             .slider-content{
+                display: none;
                 .c-slide{
                 width: 25% ;
                 
@@ -500,67 +485,84 @@ body {
                             
                 
                                  .carousel-control-next-icon{
-                                 background-color: #0cd857;
+                                 background-color:  map-get($carousel-bgcolor, carousel-color );
                                  border-radius: 1rem;}
     
                                  .carousel-control-prev-icon{
-                                     background-color: #0cd857;
+                                     background-color:  map-get($carousel-bgcolor, carousel-color );
                                     border-radius: 1rem;
                         
                             }
                          } 
-                       
-                    
+                        
+                         .grid{
+                        
+                        .contain{
+                            display: grid;
+                            grid-template-columns: 1fr 2fr 1fr;
+                            grid-gap: 15px;
+                         .grid-img {
+                          @include grid-img;
+                        }
+                        
+                        .grid-img:hover {
+                            -webkit-filter: grayscale(0);
+                            filter: grayscale(0);
+                        }
+                      } 
+                    }     
+                
+    /*TARJETA LINK*/
+    .card-contain {
+    @include card-contain;
+    
+      .flex-card {
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+    
+        .card-body {
+        @include flex-2;
+    
+          .texts {
           
     
-    /*TARJETA LINK*/
-           .card-contain{
-            margin: 0 35%;
-            margin-top: -49%;
-            margin-bottom: 20%;
-            
-            .flex-card{
-                width: 400px;
-                border-radius: 1rem 1rem 1rem;
-                padding: 10% 80%;
-                box-shadow: .3rem 1rem 2rem rgb(91, 126, 91);
-                display: flex;
-                flex-direction: row;
-                .card-img-top{
-                    padding: 1%;
-                    border-radius: 1rem 1rem;
-                }
-                .card-body{
-                    display: flex;
-                  flex-direction: row;
-            .card-title{
-             text-align: center;
-             font-family: 'Poppins';
-             font-size: 1.5rem;
-             color: $color-principal;
+            .card-img-top {
+              margin-bottom: 10px;
+              width: 100%;
+              height: auto;
             }
-             .card-text{
-                 font-size:1.2rem!important ;
-                 text-align: center;
-                 padding: 1rem;
-                 font-family: 'Poppins';
-             }
-             .hr-card{
-                padding-top: 1rem;
-               
-             }
-                 .btnn-card{
-                        margin-right: 200%;
-                        margin-top: 400%;
-                        
-                        background-color: $color-principal;
-                        border: none;
-                    }
-                  }
-                }
-               }
-            
-        
+    
+            .card-title {
+              font-size: 1.5rem;
+              font-weight: bold;
+            }
+    
+            .hr-card {
+              margin: 0;
+              border-top: 10px solid $color-principal;
+              width: 100%;
+            }
+    
+            .card-text {
+              font-size: 1rem;
+            }
+          }
+    
+          .mt-auto {
+            margin-top: auto;
+            text-align: center;
+          }
+    
+          .btnn-card {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    
+    
+      
     
     /* NOSOTROS  */
     
@@ -571,15 +573,7 @@ body {
             flex-direction: row;
             
         .about__img{
-             padding-top: 5%;
-             padding-bottom: 10%;
-             display: block;
-             margin: 0 auto;
-             width: 50%;
-             object-fit: cover;
-             border-radius: 10% ;
-             object-position: top;
-              background-attachment: fixed;
+             @include about-img;
         }
        
                 .row-6{
@@ -587,17 +581,10 @@ body {
                 margin-left: 50px;
                 color: rgb(129, 13, 13);
                 font-size: 3rem;
-                font-family: 'Poppins', sans-serif;
+                font-family:nth( $fuentes, 1 );
                 }
                     .row-12{
-                    font-family: 'Poppins', sans-serif;
-                    
-                    color: $color-secundario;
-                    margin: 0 5%; /* Elimina el margen predeterminado del párrafo */
-                    margin-top: 10%;
-                    margin-bottom: 20%;
-                    padding: 0; /* Elimina el relleno predeterminado del párrafo */
-                    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+                    @include row-12;
                 }
             }
            }
@@ -642,65 +629,69 @@ body {
         transition: all ease .55s;
         font-size: 1,5rem;
         margin:0;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: nth( $fuentes, 4 );
         background-color: white;
+        
         .btn-acordeon{
+          
+       
             .p-h1{
-                font-family: 'Poppins',sans-serif;
-                margin: 10%;}
+                font-family: nth( $fuentes, 1 );
+                margin: 5% 50%;
+                text-align: justify;
+                }
                 .btn{
-                    margin-left: 25% ;
-                   font-family: 'Archivo', sans-serif;
-                   font-weight: 0;
-                   font-size: 1rem;
-                   padding: 2% 15%;
-                   color: #fff;
-                   background-color: $color-principal;
-                   border: solid $color-principal;
-                   box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem  1rem;
-                   border-radius: 1rem;
-                   cursor: pointer;
+                @include btn;
                    }
                    .btn:hover{
-                    padding: 2% 15%;
+                    padding: 1% 2%;
                     background-color: #fff;
                     color: $color-principal;
                    border: solid $color-principal;
                                      } 
-           
-                                    }                
-    
-            .slider-product{
-             margin: 7%;
-                    .carousel-indicators{    
-            .img-product
-                    {
-              border-radius: 7%;
-              padding: 10%;
-                            
-                    }
-                     
-                    }
-                }
-    
-            }
-     
-    /*ACORDEON*/
-    
-    .acordeon-d{
-        margin: 10%;
-        margin-bottom: 10%;
-        
+                                     .grid-2{
+                        
+                                      .contain-2{
+                                          display:flex;
+                                          flex-direction: column;
+                                       .grid-img-2 {
+                                         @include grid-img
+                                      }
+                                      
+                                      .grid-img-2:hover {
+                                          -webkit-filter: grayscale(0);
+                                          filter: grayscale(0);
+                                      }
+                                    } 
+                                  }  
+                                    }      
+.acordeon-d{
+  margin: 10%;
+  margin-bottom: 10%;
+        .acordeon-item{
+          padding: 10px;
+        }
         .acordeon-a{
-            background-color:  $color-principal;
-            color: #fff;
-    
+          background-color:  $color-principal;
+          color: #fff;
+      
+          
             .acordeon-d::after{
                 background-color: #18181a;
               }
              
           }
-      }
+      }       
+    
+    
+   
+            .slider-product{
+           display: none;
+            }
+     
+    /*ACORDEON*/
+    
+    
     
      
       /* footer */
@@ -729,9 +720,7 @@ body {
                         text-align: center;
                     }
                  .footer__contact{
-                    align-content: center;
-                    display: flex;
-                    justify-content: center;
+                    @include flex-2;
                     list-style: none;
                     padding: 0;
                     
@@ -784,9 +773,7 @@ body {
     
        /* CONTACTO */
        .contact-form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-2;
         height: 100%;
         padding: 10%;
         width: 100%;
@@ -818,22 +805,10 @@ body {
                 }
                                                                 
                         .animated-button {
-                         margin: 0 20%;
-                         background-color:  $color-principal;
-                         color: #dbdbdb;
-                         border: none;
-                         border-radius: 1rem 1rem 1rem;
-                         padding: 1% 20%;
-                         font-size: 1rem;
+                        @include animated-button;
                         }   
                          .animated-button:hover{
-                          background-color: white;
-                          transition: all ease .11s;
-                          border: solid $color-secundario;
-                          color:  $color-principal;
-                          padding: 1% 20%;
-                          border-radius: 1rem 1rem 1rem;
-                          font-size: 1rem;
+                          @include animated-button-hover;
     
                                 }
                             }
@@ -841,5 +816,5 @@ body {
     
                   }
                   
-                                                        }
-                                                    
+                }
+              }
