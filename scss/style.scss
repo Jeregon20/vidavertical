@@ -423,62 +423,32 @@ body {
         background-color: white;
       
         .hero {
+        
           font-family: 'Poppins', sans-serif;
           display: flex;
           flex-direction: column; /* Agregar flex-direction: column para centrar elementos verticalmente */
           align-items: center;
           justify-content: center; /* Agregar justify-content: center para centrar elementos horizontalmente */
           background-color: $color-principal;
+          
       
-          .bg-nav{
-            background-color:  $color-principal;
-            display: flex;
-            align-items: center;
+          .bg-nav {
             .container-fluid {
-                .nav__logo{
-                    width: 150px;
-                    margin: 0 400px;}
+              .nav__logo {
+                width: 20%;
+              }
       
               .navbar-nav {
                 .navbar-collapse {
-                    .nav__menu{
-                        height: 100px;
-                        width: 35px;
-                        cursor: pointer;
-                        z-index: 100;
-                        border-radius: 5px;  
+                    .navbar-nav{
+                    text-align: center;
                     
                     .nav__item {
                       text-align: center;
                       
-                      .nav__link{
-                        text-decoration: none;
-                        color: #fff;
-                        font-weight: 500;
-                        font-size: 18px;
-                        align-items: center;
-                        position: relative;
-                        padding-bottom: 8px;
-                        margin: 0 15px;
-                        color: #fff;
-                        gap: 15px;
-                        text-decoration: none;
-                                                                        
-                        .nav__link::after { 
+                      .nav-link{
                         color: white;
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 0;
-                        height: 2px;
-                        background-color: #ffffff;
-                        transition: width 0.3s ease;
-            
-                            .nav__link:hover::after {
-                              background-color: #ffffff;
-                              width: 100%; 
-                        
+                      }
                     }
                   }
                 }
@@ -487,228 +457,389 @@ body {
           }
         }
       }
-
-
-}    
- .autocontain{
-.autoslide-one{
-    top: 0;
-    margin-top: 40px;
-    margin-left: 500px;
-    height: 100px;
-    width: 1000px;
-   }
-}
-    .slider-content{
-      background-image: url(../assets/undraw_blooming_re_2kc4.svg);
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size:contain;
-      background-position: right;
-
       
-    }
-                                             /* PRIMER SLIDER*/
-        .img-s{
-         border-radius: 10px;
-         .c-slide{
-         padding: 10px 70px;
-         position: relative;
-         margin: 10px 100px;
-         width: 550px;
-                                    
-          .visually-hidden {
-           color:  $color-principal;
-          }
-        }
-    }      
-    .card-contain{
-        background-image: url("/assets/de\WhatsApp\2023-08-014.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: right center;
-        height: 500px;
-        width: 82vw;       
-            .flex-card {
-            margin: 100px 0;
-            margin-left: 70px;
-            box-shadow: 0px 0px 70px #18181a; 
-            border-radius: 40px 40px;/* Ajusta la sombra según tus preferencias */
-            display: flex;
-            flex-direction: row;
-            width: 600px; /* Ajusta el ancho de la tarjeta */
-            height: 600px; /* Ajusta la altura de la tarjeta */
-            .card-body{
-                flex-direction: row;
-            .card-title{
-            text-align: center;
-              .card-text{
-                font-size:345px;                                                                                                                                                           
-                .btnn-card{
-                 margin-left: 25%;
-                 margin-top: 10%;
-                 margin-bottom: 5%;
-                 background-color:  $color-principal;
-                 border: none;                                                           
+                   
+                          
                 
-                    .s-page-buy {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: flex-start;
-                        justify-content: flex-start;
-                                                   /* Establece el ancho máximo para el contenedor del carrusel */
-                         .slider-product {
-                            max-width: 500px; /* Ajusta el valor según tus necesidades */
-                                /* Alinea los botones del carrusel horizontalmente */
-                                .carousel-control-prev,
-                                .carousel-control-next {
-                                 align-self: center;
-                                              /* Estilo para el botón "Comprar" */
-                                 .btn {
-                                  font-family: 'Archivo', sans-serif;
-                                  font-weight: 0;
-                                  font-size: 16px;
-                                  padding: 10px 50px;
-                                  color: #fff;
-                                  background-color:  $color-principal;
-                                  border: solid  $color-principal;
-                                  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-                                  border-radius: 1rem;
-                                  cursor: pointer;
-
-                                 .btn:hover {
-                                  padding: 10px 50px;
-                                  background-color: #fff;
-                                  color:  $color-principal;
-                                  border: solid 2px  $color-principal;
-                                 }
-                                }
+                        
+    
+            
+                
+           /* PRIMER SLIDER*/
+    .autocontain{
+    
+        .autoslide-one{
+            width: 900px;
+            margin-top: 3%;
+            height: 100px;
+            margin-bottom: 5%;
+            margin-left: 500px;
+            background-color: $color-principal;
+        }
+    }
+            .slider-content{
+                .c-slide{
+                width: 25% ;
+                
+                    .carousel-indicators{
+                        
+                        .carousel-indicators button{
+                            background-color: red;
+                        }
+                 }
+                        .carousel-inner{
+                            .carousel-item{
+                            .img-s{
+                         border-radius: 7%;
                             }
                         }
+                  }
+                              
+            }
+                     
+                            
+                
+                                 .carousel-control-next-icon{
+                                 background-color: #0cd857;
+                                 border-radius: 1rem;}
+    
+                                 .carousel-control-prev-icon{
+                                     background-color: #0cd857;
+                                    border-radius: 1rem;
+                        
+                            }
+                         } 
+                       
+                    
+          
+    
+    /*TARJETA LINK*/
+           .card-contain{
+            margin: 0 35%;
+            margin-top: -49%;
+            margin-bottom: 20%;
+            
+            .flex-card{
+                width: 400px;
+                border-radius: 1rem 1rem 1rem;
+                padding: 10% 80%;
+                box-shadow: .3rem 1rem 2rem rgb(91, 126, 91);
+                display: flex;
+                flex-direction: row;
+                .card-img-top{
+                    padding: 1%;
+                    border-radius: 1rem 1rem;
+                }
+                .card-body{
+                    display: flex;
+                  flex-direction: row;
+            .card-title{
+             text-align: center;
+             font-family: 'Poppins';
+             font-size: 1.5rem;
+             color: $color-principal;
+            }
+             .card-text{
+                 font-size:1.2rem!important ;
+                 text-align: center;
+                 padding: 1rem;
+                 font-family: 'Poppins';
+             }
+             .hr-card{
+                padding-top: 1rem;
+               
+             }
+                 .btnn-card{
+                        margin-right: 200%;
+                        margin-top: 400%;
+                        
+                        background-color: $color-principal;
+                        border: none;
+                    }
+                  }
+                }
+               }
+            
+        
+    
+    /* NOSOTROS  */
+    
+    
+    .about__row{
+        .container{
+            display: flex;
+            flex-direction: row;
+            
+        .about__img{
+             padding-top: 5%;
+             padding-bottom: 10%;
+             display: block;
+             margin: 0 auto;
+             width: 50%;
+             object-fit: cover;
+             border-radius: 10% ;
+             object-position: top;
+              background-attachment: fixed;
+        }
+       
+                .row-6{
+                margin-top:300px ;
+                margin-left: 50px;
+                color: rgb(129, 13, 13);
+                font-size: 3rem;
+                font-family: 'Poppins', sans-serif;
+                }
+                    .row-12{
+                    font-family: 'Poppins', sans-serif;
+                    
+                    color: $color-secundario;
+                    margin: 0 5%; /* Elimina el margen predeterminado del párrafo */
+                    margin-top: 10%;
+                    margin-bottom: 20%;
+                    padding: 0; /* Elimina el relleno predeterminado del párrafo */
+                    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+                }
+            }
+           }
+        
+    
+    
+    
+    /* OBJETIVOS */
+    
+    .objetivos__main{
+        height: 100vh;
+        
+        .container-fluid{
+            text-align: center;
+
+
+            .col-6{
+              margin-top: 10%;
+              color: $color-principal;
+              margin-left: 112px;
+              top: 20%;
+              font-size: 48px;
+              text-align: center;
+            }
+            .col-12{
+             font-family: sans-serif;
+             top: 10%;
+             
+            }
+            .objetivos__img{
+                width: 40%;
+                
+            }
+          
+                
+       }
+    }
+      
+     /*PAGINA DE COMPRA*/
+    
+    .s-page-buy{
+        transition: all ease .55s;
+        font-size: 1,5rem;
+        margin:0;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: white;
+        .btn-acordeon{
+            .p-h1{
+                font-family: 'Poppins',sans-serif;
+                margin: 10%;}
+                .btn{
+                    margin-left: 25% ;
+                   font-family: 'Archivo', sans-serif;
+                   font-weight: 0;
+                   font-size: 1rem;
+                   padding: 2% 15%;
+                   color: #fff;
+                   background-color: $color-principal;
+                   border: solid $color-principal;
+                   box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem  1rem;
+                   border-radius: 1rem;
+                   cursor: pointer;
+                   }
+                   .btn:hover{
+                    padding: 2% 15%;
+                    background-color: #fff;
+                    color: $color-principal;
+                   border: solid $color-principal;
+                                     } 
+           
+                                    }                
+    
+            .slider-product{
+             margin: 7%;
+                    .carousel-indicators{    
+            .img-product
+                    {
+              border-radius: 7%;
+              padding: 10%;
+                            
+                    }
+                     
+                    }
+                }
+    
+            }
+     
+    /*ACORDEON*/
+    
+    .acordeon-d{
+        margin: 10%;
+        margin-bottom: 10%;
+        
+        .acordeon-a{
+            background-color:  $color-principal;
+            color: #fff;
+    
+            .acordeon-d::after{
+                background-color: #18181a;
+              }
+             
+          }
+      }
+    
+     
+      /* footer */
+    .footer{
+        background-color:  $color-principal;
+        z-index: 2000;
+    
+     .footer__container {
+            height: 10%;
+             .footer-nav{
+                color:white;
+                .footer__link{
+                    text-decoration: none;
+                    color: white;
+                    margin: .8rem;
+                    align-items: center;
+                    justify-content: center;
+                    background-color:  $color-principal;
+                }
+             }
+            }
+                    .f-h2{
+                        color: white;
+                        margin-top: 5% ;
+                        font-size:1.5rem ;
+                        text-align: center;
+                    }
+                 .footer__contact{
+                    align-content: center;
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    padding: 0;
+                    
+    
+                 .footer__item{
+                         
+                    .footer__img{
+                        width: 80%;
+                        display: flex;    
                     }
                 }
             }
-        }
-    }
-}
-
-    /*ACORDEON*/
-                              
-                                                    /* Ajusta el acordeón para evitar que afecte al carrusel */
-                                    .about__row {
-                                        display: flex;
-                                      flex-direction: row;
-                                  
-                                         
-                                   .container {
-                                        margin-top: 100px;
-                                        margin-left: 10px;
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
-                                       
-                                        .about__img{
-                                            width: 100px;
-                                            padding: 100px;
-                                            margin-left: 10px;
-                                            height: 100px; }
-                                            .row-12{
-                                           color:#831b1b;
-                                           font-family:'Courier New', Courier, monospace;
-                                           font-size: 20px;
-                                            }
-                                           .row-6{
-                                            font-family:'Courier New', Courier, monospace;
-                                            font-size: 90px;
-                                            color: #000000; 
-                                           }
-                                        }
-                                    }
-                                
-
-
-                                            .objetivos__main{
-                                                background-image: url("../assets/Blowing rocket 3d cart.jpg");
-                                                background-attachment: fixed;
-                                                background-repeat: no-repeat;
-                                                background-position: right center;
-                                                display: flex;
-                                                flex-direction: column;
-                                                justify-content: center;
-                                                align-items: center; 
-
-                                                 .p-objetivos{
-                                                  flex-direction: row;
-
-                                                .footer{
-                                                background-color: $color-principal;
-                                                position: block;
-                                                                                        
-                                                .footer__container {
-                                                 height: 90vh;
-                                                .footer-img-logo{
-                                                width: 25%;
-                                                margin-left: 37%;
-                                                .footer-nav{                               
-                                                 color:white;
-                                                .footer__contact{
-                                                    align-content: center;
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    list-style: none;
-                                                    padding: 0;                               
-                                                    .f-h2{
-                                                        color: white;
-                                                        margin-top: 5% ;
-                                                        font-size:1.5rem ;
-                                                        text-align: center;
-                                                        .f-d{
-                                                    
-                                                            color: white;
-                                                            font-size:1em ;
-                                                            text-align: center;                             
-                                                            .f-a{
-                                                                font-family: 'Courier New', Courier, monospace;
-                                                                margin: 0;
-                                                                font-size: .8rem;
-                                                                text-align: center;
-                                                                .footer__link{
-                                                                    text-decoration: none;
-                                                                    color: white;
-                                                                    margin: .3rem;
-                                                                    align-items: center;
-                                                                    justify-content: center;
-                                                                    background-color: $color-principal;
-                                                                    .footer__img{
-                                                                        width: 80%;
-                                                                        display: flex;                                                       
-                                                                                                                  
-                                                                      
-                                                                           
-                                                                                hr{
-                                                                                    color: #fff;
-                                                                                    iframe{
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        margin-top: 5%;
-                                                                                        margin-bottom: 10%;                                              
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }              
-                                                                                                                                                        
-                            }
-                        
-                        }
+       
+                    .f-d{
+                    color: white;
+                    font-size:1em ;
+                    text-align: center;
                     }
-           }
+                    iframe{
+                        width: 100%;
+                        height: 100%;
+                        margin-top: 5%;
+                        margin-bottom: 10%;
+                        z-index: 2000;
+                    }
+                                 .wsp{
+                                 position: fixed;
+                                 bottom: 10%;
+                                 left: 95%;
+                                 z-index: 500;
+                                 
+                                                
+                                 }
+    
+                                     hr{
+                                     color: #fff;  }
+                                     .footer__link{
+                                        color: white;
+                                        text-decoration: none;
+                                     }
+                                                        
+                                    }                                         
+                                                
+                                   
+                            
+    
+                  
+        
+     
+    
+       /* CONTACTO */
+       .contact-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 10%;
+        width: 100%;
+    
+        .content-form{
+            background-color: #fff;
+            border-radius: 5%;
+            box-shadow: 0 0 5rem  $color-secundario;
+            padding: 7%;
+           form{
+            .form-group {
+                margin-bottom: 5rem;
+    
+                .form-group , label {
+                    display: block;
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                }
+                    .form-group input{
+                    .form-group textarea {
+                            display: block;
+                            width: 100%;
+                            padding: .5rem;
+                            border-radius: 5%;
+                            border: none;
+                            background-color: #f2f2f2;
+                    }
+                }
+                }
+                                                                
+                        .animated-button {
+                         margin: 0 20%;
+                         background-color:  $color-principal;
+                         color: #dbdbdb;
+                         border: none;
+                         border-radius: 1rem 1rem 1rem;
+                         padding: 1% 20%;
+                         font-size: 1rem;
+                        }   
+                         .animated-button:hover{
+                          background-color: white;
+                          transition: all ease .11s;
+                          border: solid $color-secundario;
+                          color:  $color-principal;
+                          padding: 1% 20%;
+                          border-radius: 1rem 1rem 1rem;
+                          font-size: 1rem;
+    
+                                }
+                            }
+                        }
+    
+                  }
+                  
+                                                        }
+                                                    

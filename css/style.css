@@ -268,211 +268,247 @@ body {
       align-items: center;
       justify-content: center;
       /* Agregar justify-content: center para centrar elementos horizontalmente */
-      background-color: #38684A;
-      /* PRIMER SLIDER*/ }
-      body .hero .bg-nav {
-        background-color: #38684A;
+      background-color: #38684A; }
+      body .hero .bg-nav .container-fluid .nav__logo {
+        width: 20%; }
+      body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .navbar-nav {
+        text-align: center; }
+        body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .navbar-nav .nav__item {
+          text-align: center; }
+          body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .navbar-nav .nav__item .nav-link {
+            color: white; }
+  /* PRIMER SLIDER*/
+  .autocontain .autoslide-one {
+    width: 900px;
+    margin-top: 3%;
+    height: 100px;
+    margin-bottom: 5%;
+    margin-left: 500px;
+    background-color: #38684A; }
+  .slider-content .c-slide {
+    width: 25%; }
+    .slider-content .c-slide .carousel-indicators .carousel-indicators button {
+      background-color: red; }
+    .slider-content .c-slide .carousel-inner .carousel-item .img-s {
+      border-radius: 7%; }
+  .slider-content .carousel-control-next-icon {
+    background-color: #0cd857;
+    border-radius: 1rem; }
+  .slider-content .carousel-control-prev-icon {
+    background-color: #0cd857;
+    border-radius: 1rem; }
+  /*TARJETA LINK*/
+  .card-contain {
+    margin: 0 35%;
+    margin-top: -49%;
+    margin-bottom: 20%; }
+    .card-contain .flex-card {
+      width: 400px;
+      border-radius: 1rem 1rem 1rem;
+      padding: 10% 80%;
+      box-shadow: 0.3rem 1rem 2rem #5b7e5b;
+      display: flex;
+      flex-direction: row; }
+      .card-contain .flex-card .card-img-top {
+        padding: 1%;
+        border-radius: 1rem 1rem; }
+      .card-contain .flex-card .card-body {
         display: flex;
-        align-items: center; }
-        body .hero .bg-nav .container-fluid .nav__logo {
-          width: 150px;
-          margin: 0 400px; }
-        body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .nav__menu {
-          height: 100px;
-          width: 35px;
-          cursor: pointer;
-          z-index: 100;
-          border-radius: 5px; }
-          body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .nav__menu .nav__item {
-            text-align: center; }
-            body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .nav__menu .nav__item .nav__link {
-              text-decoration: none;
-              color: #fff;
-              font-weight: 500;
-              font-size: 18px;
-              align-items: center;
-              position: relative;
-              padding-bottom: 8px;
-              margin: 0 15px;
-              color: #fff;
-              gap: 15px;
-              text-decoration: none; }
-              body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .nav__menu .nav__item .nav__link .nav__link::after {
-                color: white;
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 0;
-                height: 2px;
-                background-color: #ffffff;
-                transition: width 0.3s ease; }
-                body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .nav__menu .nav__item .nav__link .nav__link::after .nav__link:hover::after {
-                  background-color: #ffffff;
-                  width: 100%; }
-      body .hero .autocontain .autoslide-one {
-        top: 0;
-        margin-top: 40px;
-        margin-left: 500px;
-        height: 100px;
-        width: 1000px; }
-      body .hero .slider-content {
-        background-image: url(../assets/undraw_blooming_re_2kc4.svg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right; }
-      body .hero .img-s {
-        border-radius: 10px; }
-        body .hero .img-s .c-slide {
-          padding: 10px 70px;
-          position: relative;
-          margin: 10px 100px;
-          width: 550px; }
-          body .hero .img-s .c-slide .visually-hidden {
-            color: #38684A; }
-      body .hero .card-contain {
-        background-image: url("/assets/deWhatsApp‣-08-014.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: right center;
-        height: 500px;
-        width: 82vw;
-        /*ACORDEON*/
-        /* Ajusta el acordeón para evitar que afecte al carrusel */ }
-        body .hero .card-contain .flex-card {
-          margin: 100px 0;
-          margin-left: 70px;
-          box-shadow: 0px 0px 70px #18181a;
-          border-radius: 40px 40px;
-          /* Ajusta la sombra según tus preferencias */
-          display: flex;
-          flex-direction: row;
-          width: 600px;
-          /* Ajusta el ancho de la tarjeta */
-          height: 600px;
-          /* Ajusta la altura de la tarjeta */ }
-          body .hero .card-contain .flex-card .card-body {
-            flex-direction: row; }
-            body .hero .card-contain .flex-card .card-body .card-title {
-              text-align: center; }
-              body .hero .card-contain .flex-card .card-body .card-title .card-text {
-                font-size: 345px; }
-                body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card {
-                  margin-left: 25%;
-                  margin-top: 10%;
-                  margin-bottom: 5%;
-                  background-color: #38684A;
-                  border: none; }
-                  body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card .s-page-buy {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    /* Establece el ancho máximo para el contenedor del carrusel */ }
-                    body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card .s-page-buy .slider-product {
-                      max-width: 500px;
-                      /* Ajusta el valor según tus necesidades */
-                      /* Alinea los botones del carrusel horizontalmente */ }
-                      body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card .s-page-buy .slider-product .carousel-control-prev,
-                      body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card .s-page-buy .slider-product .carousel-control-next {
-                        align-self: center;
-                        /* Estilo para el botón "Comprar" */ }
-                        body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card .s-page-buy .slider-product .carousel-control-prev .btn,
-                        body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card .s-page-buy .slider-product .carousel-control-next .btn {
-                          font-family: 'Archivo', sans-serif;
-                          font-weight: 0;
-                          font-size: 16px;
-                          padding: 10px 50px;
-                          color: #fff;
-                          background-color: #38684A;
-                          border: solid #38684A;
-                          box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-                          border-radius: 1rem;
-                          cursor: pointer; }
-                          body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card .s-page-buy .slider-product .carousel-control-prev .btn .btn:hover,
-                          body .hero .card-contain .flex-card .card-body .card-title .card-text .btnn-card .s-page-buy .slider-product .carousel-control-next .btn .btn:hover {
-                            padding: 10px 50px;
-                            background-color: #fff;
-                            color: #38684A;
-                            border: solid 2px #38684A; }
-        body .hero .card-contain .about__row {
-          display: flex;
-          flex-direction: row; }
-          body .hero .card-contain .about__row .container {
-            margin-top: 100px;
-            margin-left: 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center; }
-            body .hero .card-contain .about__row .container .about__img {
-              width: 100px;
-              padding: 100px;
-              margin-left: 10px;
-              height: 100px; }
-            body .hero .card-contain .about__row .container .row-12 {
-              color: #831b1b;
-              font-family: 'Courier New', Courier, monospace;
-              font-size: 20px; }
-            body .hero .card-contain .about__row .container .row-6 {
-              font-family: 'Courier New', Courier, monospace;
-              font-size: 90px;
-              color: #000000; }
-        body .hero .card-contain .objetivos__main {
-          background-image: url("../assets/Blowing rocket 3d cart.jpg");
-          background-attachment: fixed;
-          background-repeat: no-repeat;
-          background-position: right center;
-          display: flex;
-          flex-direction: column;
+        flex-direction: row; }
+        .card-contain .flex-card .card-body .card-title {
+          text-align: center;
+          font-family: 'Poppins';
+          font-size: 1.5rem;
+          color: #38684A; }
+        .card-contain .flex-card .card-body .card-text {
+          font-size: 1.2rem !important;
+          text-align: center;
+          padding: 1rem;
+          font-family: 'Poppins'; }
+        .card-contain .flex-card .card-body .hr-card {
+          padding-top: 1rem; }
+        .card-contain .flex-card .card-body .btnn-card {
+          margin-right: 200%;
+          margin-top: 400%;
+          background-color: #38684A;
+          border: none; }
+  /* NOSOTROS  */
+  .about__row .container {
+    display: flex;
+    flex-direction: row; }
+    .about__row .container .about__img {
+      padding-top: 5%;
+      padding-bottom: 10%;
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      object-fit: cover;
+      border-radius: 10%;
+      object-position: top;
+      background-attachment: fixed; }
+    .about__row .container .row-6 {
+      margin-top: 300px;
+      margin-left: 50px;
+      color: #810d0d;
+      font-size: 3rem;
+      font-family: 'Poppins', sans-serif; }
+    .about__row .container .row-12 {
+      font-family: 'Poppins', sans-serif;
+      color: #457D58;
+      margin: 0 5%;
+      /* Elimina el margen predeterminado del párrafo */
+      margin-top: 10%;
+      margin-bottom: 20%;
+      padding: 0;
+      /* Elimina el relleno predeterminado del párrafo */
+      box-sizing: border-box;
+      /* Incluye el relleno y el borde en el ancho total */ }
+  /* OBJETIVOS */
+  .objetivos__main {
+    height: 100vh; }
+    .objetivos__main .container-fluid {
+      text-align: center; }
+      .objetivos__main .container-fluid .col-6 {
+        margin-top: 10%;
+        color: #38684A;
+        margin-left: 112px;
+        top: 20%;
+        font-size: 48px;
+        text-align: center; }
+      .objetivos__main .container-fluid .col-12 {
+        font-family: sans-serif;
+        top: 10%; }
+      .objetivos__main .container-fluid .objetivos__img {
+        width: 40%; }
+  /*PAGINA DE COMPRA*/
+  .s-page-buy {
+    transition: all ease .55s;
+    font-size: 1,5rem;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white; }
+    .s-page-buy .btn-acordeon .p-h1 {
+      font-family: 'Poppins',sans-serif;
+      margin: 10%; }
+    .s-page-buy .btn-acordeon .btn {
+      margin-left: 25%;
+      font-family: 'Archivo', sans-serif;
+      font-weight: 0;
+      font-size: 1rem;
+      padding: 2% 15%;
+      color: #fff;
+      background-color: #38684A;
+      border: solid #38684A;
+      box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem 1rem;
+      border-radius: 1rem;
+      cursor: pointer; }
+    .s-page-buy .btn-acordeon .btn:hover {
+      padding: 2% 15%;
+      background-color: #fff;
+      color: #38684A;
+      border: solid #38684A; }
+    .s-page-buy .slider-product {
+      margin: 7%; }
+      .s-page-buy .slider-product .carousel-indicators .img-product {
+        border-radius: 7%;
+        padding: 10%; }
+  /*ACORDEON*/
+  .acordeon-d {
+    margin: 10%;
+    margin-bottom: 10%; }
+    .acordeon-d .acordeon-a {
+      background-color: #38684A;
+      color: #fff; }
+      .acordeon-d .acordeon-a .acordeon-d::after {
+        background-color: #18181a; }
+  /* footer */
+  .footer {
+    background-color: #38684A;
+    z-index: 2000; }
+    .footer .footer__container {
+      height: 10%; }
+      .footer .footer__container .footer-nav {
+        color: white; }
+        .footer .footer__container .footer-nav .footer__link {
+          text-decoration: none;
+          color: white;
+          margin: .8rem;
+          align-items: center;
           justify-content: center;
-          align-items: center; }
-          body .hero .card-contain .objetivos__main .p-objetivos {
-            flex-direction: row; }
-            body .hero .card-contain .objetivos__main .p-objetivos .footer {
-              background-color: #38684A;
-              position: block; }
-              body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container {
-                height: 90vh; }
-                body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo {
-                  width: 25%;
-                  margin-left: 37%; }
-                  body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav {
-                    color: white; }
-                    body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav .footer__contact {
-                      align-content: center;
-                      display: flex;
-                      justify-content: center;
-                      list-style: none;
-                      padding: 0; }
-                      body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav .footer__contact .f-h2 {
-                        color: white;
-                        margin-top: 5%;
-                        font-size: 1.5rem;
-                        text-align: center; }
-                        body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav .footer__contact .f-h2 .f-d {
-                          color: white;
-                          font-size: 1em;
-                          text-align: center; }
-                          body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav .footer__contact .f-h2 .f-d .f-a {
-                            font-family: 'Courier New', Courier, monospace;
-                            margin: 0;
-                            font-size: .8rem;
-                            text-align: center; }
-                            body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav .footer__contact .f-h2 .f-d .f-a .footer__link {
-                              text-decoration: none;
-                              color: white;
-                              margin: .3rem;
-                              align-items: center;
-                              justify-content: center;
-                              background-color: #38684A; }
-                              body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav .footer__contact .f-h2 .f-d .f-a .footer__link .footer__img {
-                                width: 80%;
-                                display: flex; }
-                                body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav .footer__contact .f-h2 .f-d .f-a .footer__link .footer__img hr {
-                                  color: #fff; }
-                                  body .hero .card-contain .objetivos__main .p-objetivos .footer .footer__container .footer-img-logo .footer-nav .footer__contact .f-h2 .f-d .f-a .footer__link .footer__img hr iframe {
-                                    width: 100%;
-                                    height: 300px;
-                                    margin-top: 5%;
-                                    margin-bottom: 10%; } }
+          background-color: #38684A; }
+    .footer .f-h2 {
+      color: white;
+      margin-top: 5%;
+      font-size: 1.5rem;
+      text-align: center; }
+    .footer .footer__contact {
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0; }
+      .footer .footer__contact .footer__item .footer__img {
+        width: 80%;
+        display: flex; }
+    .footer .f-d {
+      color: white;
+      font-size: 1em;
+      text-align: center; }
+    .footer iframe {
+      width: 100%;
+      height: 100%;
+      margin-top: 5%;
+      margin-bottom: 10%;
+      z-index: 2000; }
+    .footer .wsp {
+      position: fixed;
+      bottom: 10%;
+      left: 95%;
+      z-index: 500; }
+    .footer hr {
+      color: #fff; }
+    .footer .footer__link {
+      color: white;
+      text-decoration: none; }
+  /* CONTACTO */
+  .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10%;
+    width: 100%; }
+    .contact-form .content-form {
+      background-color: #fff;
+      border-radius: 5%;
+      box-shadow: 0 0 5rem #457D58;
+      padding: 7%; }
+      .contact-form .content-form form .form-group {
+        margin-bottom: 5rem; }
+        .contact-form .content-form form .form-group .form-group, .contact-form .content-form form .form-group label {
+          display: block;
+          margin-bottom: 1rem;
+          font-weight: 600; }
+        .contact-form .content-form form .form-group .form-group input .form-group textarea {
+          display: block;
+          width: 100%;
+          padding: .5rem;
+          border-radius: 5%;
+          border: none;
+          background-color: #f2f2f2; }
+      .contact-form .content-form form .animated-button {
+        margin: 0 20%;
+        background-color: #38684A;
+        color: #dbdbdb;
+        border: none;
+        border-radius: 1rem 1rem 1rem;
+        padding: 1% 20%;
+        font-size: 1rem; }
+      .contact-form .content-form form .animated-button:hover {
+        background-color: white;
+        transition: all ease .11s;
+        border: solid #457D58;
+        color: #38684A;
+        padding: 1% 20%;
+        border-radius: 1rem 1rem 1rem;
+        font-size: 1rem; } }
