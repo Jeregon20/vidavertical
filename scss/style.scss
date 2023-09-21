@@ -19,31 +19,23 @@ body {
   
           .navbar-nav {
             .navbar-collapse {
-                .navbar-nav{
+                .nav-ul{
                 text-align: center;
                 
-                .nav__item {
+                .nav-item {
                   text-align: center;
                   
                   .nav-link{
-                    color: white;
+                    color: rgb(255, 255, 255);
                   }
                 }
               }
+             }
+              
             }
           }
         }
       }
-    }
-  }
-  
-               
-                      
-            
-                    
-
-        
-            
        /* PRIMER SLIDER*/
 .autocontain{
 
@@ -54,61 +46,62 @@ body {
         background-color: $color-principal;
     }
 }
-        .slider-content{
-            .c-slide{
-            margin: 5%;
-               
-                    .carousel-inner{
-                        .carousel-item{
-                        .img-s{
-                     border-radius: 7%;
-                        }
-                    }
-              }
-                          
-        }
-                 
-                        
-            
-                             .carousel-control-next-icon{
-                             background-color: map-get($carousel-bgcolor, carousel-color );
-                             border-radius: 1rem;}
-
-                             .carousel-control-prev-icon{
-                                 background-color: map-get($carousel-bgcolor, carousel-color );
-                                border-radius: 1rem;
-                    
-                        }
-                     } 
-                   
-             .contain{
-                display: none;
-             }   
-      
-
+ .slider-content{
+   .c-slide{
+    margin: 2rem;
+    margin-bottom: 1rem;
+   .carousel-inner{
+      .carousel-item{
+        .img-s{
+          border-radius: 2rem;
+             }
+         }
+     }                       
+ }
+ .carousel-control-next-icon{
+   background-color: map-get($carousel-bgcolor, carousel-color );
+   border-radius: 1rem;}
+   .carousel-control-prev-icon{
+       background-color: map-get($carousel-bgcolor, carousel-color );
+       border-radius: 1rem;
+     }
+  } 
+.contain{
+ display: none;
+ }   
+ .grid{
+  margin-right: 2rem;
+   .contain{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 1rem;
+    .grid-img {
+     @include grid-img1;
+       }
+    } 
+ }     
 /*TARJETA LINK*/
-       .card-contain{
-        margin: 15%;
-        .flex-card{
-            border-radius: 1rem 1rem 1rem;
-            padding: 5%;
-            box-shadow: .3rem 1rem 2rem rgb(91, 126, 91);
-            .card-img-top{
-                padding: 1%;
-                border-radius: 1rem 1rem;
+.card-contain{
+   @include card-contain;
+    margin-top: 10%;
+     .flex-card{
+      border-radius: 1rem 1rem 1rem;
+      padding: 1rem;
+      box-shadow: .3rem 1rem 2rem rgb(91, 126, 91);
+      .card-img-top{
+        padding: 1px;
+        border-radius: 1rem 1rem;
             }
-            .card-body{
-                top: 10%;
+        .card-body{
+         top: 1rem;
         .card-title{
-        
          text-align: center;
          font-family: nth( $fuentes, 1 );
          font-size: 1.5rem;
          color: $color-principal;
          font-weight: bold;
         }
-         .card-text{
-            
+        .card-text{
              font-size:1.2rem!important ;
              text-align: center;
              padding: 1rem;
@@ -117,24 +110,22 @@ body {
          }
          .hr-card{
             padding-top: 1rem;
-           
          }
-             .btnn-card{
-                    margin-left: 35%;
-                    margin-top: 10%;
-                    margin-bottom: 5%;
-                    background-color: $color-principal;
-                    border: none;
+        .btnn-card{
+         margin-left: 35%;
+         margin-top: 10%;
+         margin-bottom: 5%;
+         background-color: $color-principal;
+         border: none;
                 }
               }
             }
+          
            }
         
-    
+          
 
 /* NOSOTROS  */
-
-
 .about__row{
     .about__img{
          padding-top: 5%;
@@ -168,21 +159,17 @@ body {
                 box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
                 font-weight: bold;
             }
-        }
-       }
+      }
+  }
     
 
 
 
 /* OBJETIVOS */
-
 .objetivos__main{
-    
     height: 100vh;
     .container-fluid{
         text-align: center;
-        
-        
         .col-6{
           margin-top: 10%;
           color: $color-principal;
@@ -195,89 +182,67 @@ body {
          font-family:nth( $fuentes, 2 );
          top: 10%;
          font-weight: bold;
-         
         }
         .objetivos__img{
          width: map-get($objetivos-img, objetivos-width );
          height: map-get($objetivos-img, objetivos-height);
-        }
-      
-            
+      } 
    }
 }
-  
  /*PAGINA DE COMPRA*/
-
 .s-page-buy{
-    transition: all ease .55s;
     font-size: 1,5rem;
     margin:0;
-    font-family: nth( $fuentes, 4 );;
+    font-family: nth( $fuentes, 4 );
     background-color: white;
-    .btn-acordeon{
+    flex-direction: column;
+    .content-page{
+      .left-section{
         .p-h1{
             font-family: nth( $fuentes, 1 );
-            margin: 10%;}
+            margin: 10%;
+            font-weight: bold}
             .btn{
-                margin-left: 25% ;
-               font-family: nth( $fuentes, 2 );
-               font-weight: 0;
-               font-size: 1rem;
-               padding: 2% 15%;
-               color: #fff;
-               background-color: $color-principal;
-               border: solid $color-principal;
-               box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem  1rem;
-               border-radius: 1rem;
-               cursor: pointer;
-               }
-               .btn:hover{
-                padding: 2% 15%;
-                background-color: #fff;
-                color: $color-principal;
-               border: solid $color-principal;
-                                 } 
-       
-                                }                
-
-        .slider-product{
-         margin: 7%;
-                .carousel-indicators{    
+              @include btn;
+      }
+    }
+  }    
+ .slider-product{
+   padding: 10%;
+      .carousel-inner{
+          border-radius: 12%;
         .img-product
                 {
-          border-radius: 7%;
-          padding: 10%;
-                        
+          border-radius: 10%;
+          padding: 1%;         
                 }
-                 
+                .carousel-control-prev-icon{
+                  background-color: map-get($carousel-bgcolor, carousel-color );
+                  border-radius: 1rem;
+                }
+                .carousel-control-next-icon{
+                  background-color: map-get($carousel-bgcolor, carousel-color );
+                  border-radius: 1rem;
                 }
             }
-
+          }
         }
- 
 /*ACORDEON*/
-
 .acordeon-d{
     margin: 10%;
     margin-bottom: 10%;
-    
     .acordeon-a{
         background-color:  $color-principal;
         color: #fff;
-
         .acordeon-d::after{
             background-color: #18181a;
           }
-         
       }
   }
-
- 
   /* footer */
 .footer{
     background-color:  $color-principal;
     z-index: 2000;
-
  .footer__container {
         height: 10%;
          .footer-nav{
@@ -289,43 +254,40 @@ body {
                 align-items: center;
                 justify-content: center;
                 background-color:  $color-principal;
-            }
-         }
-        }
-                .f-h2{
-                    color: white;
-                    margin-top: 5% ;
-                    font-size:1.5rem ;
-                    text-align: center;
-                }
-             .footer__contact{
-                align-content: center;
-                display: flex;
-                justify-content: center;
-                list-style: none;
-                padding: 0;
-                
-
-             .footer__item{
-                     
-                .footer__img{
-                    width: 80%;
-                    display: flex;    
-                }
-            }
-        }
+       }
+     }
+ }
+ .f-h2{
+  color: white;
+  margin-top: 5% ;
+  font-size:1.5rem ;
+  text-align: center;
+ }
+  .footer__contact{
+   align-content: center;
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+    .footer__item{     
+      .footer__img{
+          width: 80%;
+           display: flex;    
+          }
+     }
+ }
    
-                .f-d{
-                color: white;
-                font-size:1em ;
-                text-align: center;
-                }
-                iframe{
-                    width: 100%;
-                    height: 100%;
-                    margin-top: 5%;
-                    margin-bottom: 10%;
-                    z-index: 2000;
+.f-d{
+    color: white;
+      font-size:1em ;
+         text-align: center;
+         }
+        iframe{
+         width: 100%;
+           height: 100%;
+             margin-top: 5%;
+              margin-bottom: 10%;
+                z-index: 2000;
                 }
                              .wsp{
                              position: fixed;
@@ -413,107 +375,58 @@ body {
               
             
           
-    
-  
-  @media (min-width:768px) {
-    body {
-        background-color: white;
-      
-        .hero {
-        @include flex;
-          .bg-nav {
-            .container-fluid {
-              .nav__logo {
-                width: 20%;
-              }
-      
-              .navbar-nav {
-                .navbar-collapse {
-                    .navbar-nav{
-                    text-align: center;
-                    
-                    .nav__item {
-                      text-align: center;
-                      
-                      .nav-link{
-                        color: white;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+    /* Media query para tablet (ancho mínimo de 1024px) */
+@media (min-width: 1024px) {
+.hero {
+  @include flex;
+  .bg-nav {
+    .container-fluid {
+      .nav__logo {
+        width: 30%;
       }
-      
-                   
-                          
-                
-                        
-    
-            
-                
-           /* PRIMER SLIDER*/
-    .autocontain{
-    
-        .autoslide-one{
-          @include autoslide;
-        }
+      // ... otros estilos
     }
-            .slider-content{
-                display: none;
-                .c-slide{
-                width: 25% ;
-                
-                    .carousel-indicators{
-                        
-                        .carousel-indicators button{
-                            background-color: red;
-                        }
-                 }
-                        .carousel-inner{
-                            .carousel-item{
-                            .img-s{
-                         border-radius: 7%;
-                            }
-                        }
-                  }
-                              
+  }
+}
+
+  .autocontain {
+  
+    .autoslide-one{
+   @include autoslide-t;
+      
+    }
+  }
+
+  .slider-content{
+    .c-slide{
+    margin: 32px;
+    margin-bottom: 16px;
+       
+            .carousel-inner{
+                .carousel-item{
+                .img-s{
+             border-radius: 2rem;
+                }
             }
-                     
-                            
-                
-                                 .carousel-control-next-icon{
-                                 background-color:  map-get($carousel-bgcolor, carousel-color );
-                                 border-radius: 1rem;}
+      }
+                  
+    }
+ 
+}
+  .about__row {
     
-                                 .carousel-control-prev-icon{
-                                     background-color:  map-get($carousel-bgcolor, carousel-color );
-                                    border-radius: 1rem;
-                        
-                            }
-                         } 
-                        
-                         .grid{
-                        
-                        .contain{
-                            display: grid;
-                            grid-template-columns: 1fr 2fr 1fr;
-                            grid-gap: 15px;
-                         .grid-img {
-                          @include grid-img;
-                        }
-                        
-                        .grid-img:hover {
-                            -webkit-filter: grayscale(0);
-                            filter: grayscale(0);
-                        }
-                      } 
-                    }     
-                
-    /*TARJETA LINK*/
-    .card-contain {
+  }
+
+  .objetivos__main {
+    .container-fluid{
+      .col-6{}
+      .col-12{}
+      .objetivos__img{
+        width: 600px;
+      }
+    }
+  }
+  .card-contain {
     @include card-contain;
     
       .flex-card {
@@ -523,7 +436,8 @@ body {
     
         .card-body {
         @include flex-2;
-    
+      
+        
           .texts {
           
     
@@ -555,8 +469,177 @@ body {
           }
     
           .btnn-card {
+            margin-left: -5px;
+          }
+          
+        }
+      }
+    }
+  /* ... otros estilos para tablet */
+}
+.grid{
+                        
+  .contain{
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-gap: 15px;
+   .grid-img {
+    @include grid-img;
+  }
+} 
+.s-page-buy{
+  font-size: 1,5rem;
+  margin:0;
+  font-family: nth( $fuentes, 4 );
+  background-color: white;
+  
+  flex-direction: column;
+  .content-page{
+    .left-section{
+  
+      .p-h1{
+          font-family: nth( $fuentes, 1 );
+          margin: 10px;
+          font-weight: bold}
+          .btn{
+            @include btn;
+             }
+          
+     
+                              } }    
+
+      .slider-product{
+       padding: 10px;
+            .carousel-inner{
+              border-radius: 12%;
+      .img-product
+              {
+        border-radius: 10%;
+        padding: 1%;
+                      
+              }
+              .carousel-control-prev-icon{
+                background-color: $color-secundario;
+                margin-left: -5%;
+                
+              }
+              .carousel-control-next-icon{
+              background-color: $color-secundario;
+              margin-left: 1px;
+              }
+              
+          }
+        }
+          
+      }
+}     
+}
+
+  @media (min-width:768px) {
+    body {
+        background-color: white;
+      
+        .hero {
+        @include flex;
+          .bg-nav {
+            .container-fluid {
+              .nav__logo {
+                width: 20%;
+              }
+      
+              .navbar-nav {
+                .navbar-collapse {
+                    .navbar-nav{
+                    text-align: center;
+                    
+                    .nav__item {
+                      text-align: center;
+                      
+                      .nav-link{
+                        color: rgb(255, 255, 255);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }     
+           /* PRIMER SLIDER*/
+.autocontain{
+  .autoslide-one{
+    @include autoslide;
+     }
+ }
+  .slider-content{
+       .c-slide{
+       display: none;
+       }
+   }          
+  .carousel-control-next-icon{
+   background-color:  map-get($carousel-bgcolor, carousel-color );
+     border-radius: 1rem;}
+    .carousel-control-prev-icon{
+     background-color:  map-get($carousel-bgcolor, carousel-color );
+    border-radius: 1rem;               
+    }
+ }                    
+.grid{
+  .contain{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 15px;
+  .grid-img {
+    @include grid-img;
+    }
+    .grid-img:hover {
+    -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+        }
+    } 
+ }               
+    /*TARJETA LINK*/
+    .card-contain {
+    @include card-contain;
+      .flex-card {
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        .card-body {
+        @include flex-2;
+          .texts {
+            .card-img-top {
+              margin-bottom: 10px;
+              width: 100%;
+              height: auto;
+            }
+    
+            .card-title {
+              font-size: 1.5rem;
+              font-weight: bold;
+            }
+    
+            .hr-card {
+              margin: 0;
+              border-top: 10px solid $color-principal;
+              width: 100%;
+            }
+    
+            .card-text {
+              font-size: 1rem;
+            }
+          }
+    
+          .mt-auto {
+            margin-top: auto;
+            text-align: center;
+          }
+    
+          .btnn-card {
             margin-left: 10px;
           }
+          
         }
       }
     }
@@ -575,7 +658,6 @@ body {
         .about__img{
              @include about-img;
         }
-       
                 .row-6{
                 margin-top:300px ;
                 margin-left: 50px;
@@ -624,70 +706,92 @@ body {
     }
       
      /*PAGINA DE COMPRA*/
-    
+
     .s-page-buy{
+        height: 1000px;
         transition: all ease .55s;
-        font-size: 1,5rem;
+        font-size:36px;
         margin:0;
         font-family: nth( $fuentes, 4 );
         background-color: white;
         
-        .btn-acordeon{
-          
+        
+        .content-page{  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .left-section {
+      width: 1000px;
+      /* Estilos adicionales para la sección izquierda */
+    }
+
+    .right-section {
+      width: 1000px;
+      /* Estilos adicionales para la sección derecha (slider-product) */
+    }
+  
        
             .p-h1{
                 font-family: nth( $fuentes, 1 );
-                margin: 5% 50%;
-                text-align: justify;
+               margin-left: 200px;
+               margin-top: 100px;
+               margin-bottom: 100px;
+               font-weight: bold
                 }
                 .btn{
                 @include btn;
                    }
                    .btn:hover{
-                    padding: 1% 2%;
+                    padding: 1% 10%;
                     background-color: #fff;
                     color: $color-principal;
                    border: solid $color-principal;
-                                     } 
-                                     .grid-2{
-                        
-                                      .contain-2{
-                                          display:flex;
-                                          flex-direction: column;
-                                       .grid-img-2 {
-                                         @include grid-img
-                                      }
-                                      
-                                      .grid-img-2:hover {
-                                          -webkit-filter: grayscale(0);
-                                          filter: grayscale(0);
-                                      }
-                                    } 
-                                  }  
-                                    }      
+                } 
+            }
+          }
+        .slider-product{
+          width: 700px;
+          margin-left: 50px;
+         .img-product{
+          border-radius: 10px;
+         }
+         
+          .carousel-control-prev-icon{
+            background-color: rgb(0, 255, 13);
+            margin-left: -100px;
+            border-radius: 30px;
+          }
+          .carousel-control-next-icon{
+            background-color: rgb(0, 255, 13);
+            border-radius: 30px;
+            margin-left: 100px;
+          }
+          }
+        
+          
+       
+                                    
 .acordeon-d{
-  margin: 10%;
-  margin-bottom: 10%;
-        .acordeon-item{
-          padding: 10px;
+ 
+  margin: 30px;
+  margin-bottom: 10px;
+  .accordion-item{
+    border: none;
         }
-        .acordeon-a{
+      .acordeon-a{
           background-color:  $color-principal;
           color: #fff;
-      
-          
+          padding: 30px 50px;
             .acordeon-d::after{
                 background-color: #18181a;
-              }
-             
-          }
-      }       
+         }
+     }
+ }       
     
     
    
-            .slider-product{
-           display: none;
-            }
+          
      
     /*ACORDEON*/
     
@@ -729,7 +833,8 @@ body {
                          
                     .footer__img{
                         width: 80%;
-                        display: flex;    
+                        display: flex;   
+                        
                     }
                 }
             }
@@ -749,7 +854,7 @@ body {
                                  .wsp{
                                  position: fixed;
                                  bottom: 10%;
-                                 left: 95%;
+                                 left: 90%;
                                  z-index: 500;
                                  
                                                 
@@ -815,6 +920,4 @@ body {
                         }
     
                   }
-                  
-                }
-              }
+                 

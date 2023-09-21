@@ -28,11 +28,19 @@ border: 2px solid black;
     align-items: center;}
 
 @mixin autoslide{
+    width: 600px;
+
+    height: 100px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+    background-color: $color-principal;
+}
+@mixin autoslide-t{
     width: 800px;
     margin-top: 1px;
     height: 80px;
     margin-bottom: 20px;
-    margin-left: 500px;
+    margin-left: 100px;
     background-color: $color-principal;
 }
 @mixin grid-img{
@@ -40,14 +48,21 @@ border: 2px solid black;
     height: 70%;
     object-fit: cover;
     -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    filter: greyscale(100%);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
+@mixin grid-img1{
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    
+   
+}
 @mixin card-contain{
-    margin-top: -55%;
-    margin-bottom: 10%;
-    margin-left: 40%;
+    margin-top: -15%;
+    margin-left: 35%;
+    margin-bottom: 5%;
     display: flex;
     align-items: center;
 }
@@ -74,11 +89,12 @@ border: 2px solid black;
 }
 
 @mixin btn{
-    margin-left: 25% ;
+    margin-left: 35% ;
+    margin-top: 3%;
     font-family: nth( $fuentes, 2 );
     font-weight: 0;
     font-size: 1rem;
-    padding: 1% 2%;
+    padding: 1% 10%;
     color: #fff;
     background-color: $color-principal;
     border: solid $color-principal;
