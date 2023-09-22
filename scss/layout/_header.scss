@@ -1,0 +1,9 @@
+@mixin flex{
+    font-family: nth($fuentes, 1 );
+    display: flex;
+    flex-direction: column; /* Agregar flex-direction: column para centrar elementos verticalmente */
+    align-items: center;
+    justify-content: center; /* Agregar justify-content: center para centrar elementos horizontalmente */
+    background-color: $color-principal;
+    
+}

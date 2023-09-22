@@ -1,0 +1,18 @@
+//mixin con parametros
+
+@mixin estilos-base($width, $height, $color)
+{
+width: $width;
+height: $height;
+color: $color;
+border: 2px solid black;
+}
+
+
+
+
+
+//mixin sin parametros
+
+
+

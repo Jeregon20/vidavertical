@@ -1,0 +1,33 @@
+@mixin btn{
+    margin-left: 35% ;
+    margin-top: 3%;
+    font-family: nth( $fuentes, 2 );
+    font-weight: 0;
+    font-size: 1rem;
+    padding: 1% 10%;
+    color: #fff;
+    background-color: $color-principal;
+    border: solid $color-principal;
+    box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem  1rem;
+    border-radius: 1rem;
+    cursor: pointer; 
+}
+
+@mixin animated-button{
+    margin: 0 20%;
+    background-color:  $color-principal;
+    color: #dbdbdb;
+    border: none;
+    border-radius: 1rem 1rem 1rem;
+    padding: 1% 20%;
+    font-size: 1rem;
+}
+@mixin animated-button-hover{
+                          background-color: white;
+                          transition: all ease .11s;
+                          border: solid $color-secundario;
+                          color:  $color-principal;
+                          padding: 1% 20%;
+                          border-radius: 1rem 1rem 1rem;
+                          font-size: 1rem;
+}

@@ -1,0 +1,32 @@
+@mixin autoslide{
+    width: 600px;
+
+    height: 100px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+    background-color: $color-principal;
+}
+@mixin autoslide-t{
+    width: 800px;
+    margin-top: 1px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    background-color: $color-principal;
+}
+@mixin grid-img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: greyscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+@mixin grid-img1{
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    
+   
+}

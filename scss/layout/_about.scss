@@ -1,0 +1,20 @@
+@mixin about-img{
+    padding-top: 5%;
+             padding-bottom: 10%;
+             display: block;
+             margin: 0 auto;
+             width: 50%;
+             object-fit: cover;
+             border-radius: 10% ;
+             object-position: top;
+              background-attachment: fixed;
+}
+@mixin row-12{
+    font-family:nth( $fuentes, 1 );
+    color: $color-secundario;
+    margin: 0 5%; /* Elimina el margen predeterminado del párrafo */
+    margin-top: 10%;
+    margin-bottom: 20%;
+    padding: 0; /* Elimina el relleno predeterminado del párrafo */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}

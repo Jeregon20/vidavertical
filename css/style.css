@@ -21,11 +21,13 @@ body {
     background-color: #38684A; }
     body .hero .bg-nav .container-fluid .nav__logo {
       width: 20%; }
-    body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .nav-ul {
+    body .hero .bg-nav .container-fluid .navbar-nav {
+      color: white; }
+    body .hero .bg-nav .container-fluid .navbar-collapse .nav-ul {
       text-align: center; }
-      body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .nav-ul .nav-item {
+      body .hero .bg-nav .container-fluid .navbar-collapse .nav-ul .nav-item {
         text-align: center; }
-        body .hero .bg-nav .container-fluid .navbar-nav .navbar-collapse .nav-ul .nav-item .nav-link {
+        body .hero .bg-nav .container-fluid .navbar-collapse .nav-ul .nav-item .nav-link {
           color: white; }
   body .autocontain .autoslide-one {
     margin-top: 3%;
@@ -39,10 +41,10 @@ body {
       border-radius: 2rem; }
   body .slider-content .carousel-control-next-icon {
     background-color: #0cd857;
-    border-radius: 1rem; }
+    border-radius: 1%; }
   body .slider-content .carousel-control-prev-icon {
     background-color: #0cd857;
-    border-radius: 1rem; }
+    border-radius: 1%; }
   body .contain {
     display: none; }
   body .grid {
@@ -57,7 +59,7 @@ body {
         object-fit: cover; }
   body .card-contain {
     margin-top: -15%;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-bottom: 5%;
     display: flex;
     align-items: center;
@@ -86,7 +88,7 @@ body {
         body .card-contain .flex-card .card-body .hr-card {
           padding-top: 1rem; }
         body .card-contain .flex-card .card-body .btnn-card {
-          margin-left: 35%;
+          margin-left: 1%;
           margin-top: 10%;
           margin-bottom: 5%;
           background-color: #38684A;
@@ -104,7 +106,7 @@ body {
       border-radius: 50%;
       background-attachment: fixed; }
     body .about__row .container .row-6 {
-      padding-top: -10%;
+      margin-top: -1%;
       margin-left: 1%;
       text-align: center;
       color: #810d0d;
@@ -186,6 +188,10 @@ body {
       color: #fff; }
       body .acordeon-d .acordeon-a .acordeon-d::after {
         background-color: #18181a; }
+    body .acordeon-d .accordion-st {
+      font-size: 1rem;
+      letter-spacing: normal;
+      margin: 0; }
   body .footer {
     background-color: #38684A;
     z-index: 2000; }
@@ -305,7 +311,7 @@ body {
         width: 600px; }
       body .card-contain {
         margin-top: -15%;
-        margin-left: 20%;
+        margin-left: 10%;
         margin-bottom: 5%;
         display: flex;
         align-items: center; }
@@ -418,7 +424,7 @@ body {
     border-radius: 1rem; }
   .carousel-control-prev-icon {
     background-color: #0cd857;
-    border-radius: 1rem; } }
+    border-radius: 1%; } }
 
 .grid .contain {
   display: grid;
@@ -439,7 +445,7 @@ body {
 /*TARJETA LINK*/
 .card-contain {
   margin-top: -15%;
-  margin-left: 20%;
+  margin-left: 10%;
   margin-bottom: 5%;
   display: flex;
   align-items: center; }
@@ -570,12 +576,12 @@ body {
     border-radius: 10px; }
   .slider-product .carousel-control-prev-icon {
     background-color: #00ff0d;
-    margin-left: -100px;
+    margin-left: -10px;
     border-radius: 30px; }
   .slider-product .carousel-control-next-icon {
     background-color: #00ff0d;
     border-radius: 30px;
-    margin-left: 100px; }
+    margin-left: 10px; }
 
 .acordeon-d {
   margin: 30px;
