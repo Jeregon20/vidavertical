@@ -6,7 +6,6 @@ body {
   /* NOSOTROS  */
   /* OBJETIVOS */
   /*PAGINA DE COMPRA*/
-  /*ACORDEON*/
   /* footer */
   /* CONTACTO */
   /* Media query para tablet (ancho mínimo de 1024px) */ }
@@ -145,53 +144,90 @@ body {
         width: 100%;
         height: 20%; }
   body .s-page-buy {
-    font-size: 1,5rem;
+    height: 100%;
+    transition: all ease .55s;
+    font-size: 1rem;
     margin: 0;
     font-family: monospace;
-    background-color: white;
-    flex-direction: column; }
-    body .s-page-buy .content-page .left-section .p-h1 {
-      font-family: "Poppins";
-      margin: 10%;
-      font-weight: bold; }
-    body .s-page-buy .content-page .left-section .btn {
-      margin-left: 35%;
-      margin-top: 3%;
-      font-family: sans-serif;
-      font-weight: 0;
-      font-size: 1rem;
-      padding: 1% 10%;
-      color: #fff;
-      background-color: #38684A;
-      border: solid #38684A;
-      box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem 1rem;
-      border-radius: 1rem;
-      cursor: pointer; }
+    background-color: white; }
+    @media (max-width: 767px) {
+      body .s-page-buy {
+        height: auto;
+        font-size: 1rem; }
+        body .s-page-buy .content-page {
+          flex-direction: column;
+          align-items: center; }
+          body .s-page-buy .content-page .left-section, body .s-page-buy .content-page .right-section {
+            width: 100%;
+            margin: 0; }
+          body .s-page-buy .content-page .p-h1 {
+            margin: 2rem 0; }
+          body .s-page-buy .content-page .btn {
+            width: 50%;
+            margin: 1rem; }
+          body .s-page-buy .content-page .slider-product {
+            width: 100%;
+            margin-left: 0; }
+        body .s-page-buy .acordeon-d {
+          margin: 2rem 3rem;
+          width: 50%; }
+          body .s-page-buy .acordeon-d .accordion-item {
+            border: none; }
+          body .s-page-buy .acordeon-d .acordeon-a {
+            background-color: #38684A;
+            color: #fff;
+            padding: 1rem; }
+            body .s-page-buy .acordeon-d .acordeon-a .acordeon-d::after {
+              background-color: #18181a; } }
+    body .s-page-buy .content-page {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      body .s-page-buy .content-page .left-section {
+        width: 70%;
+        /* Estilos adicionales para la sección izquierda */ }
+      body .s-page-buy .content-page .right-section {
+        margin-left: 5%;
+        margin-bottom: 1%;
+        width: 90%;
+        /* Estilos adicionales para la sección derecha (slider-product) */ }
+      body .s-page-buy .content-page .p-h1 {
+        font-family: "Poppins";
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-weight: bold; }
+      body .s-page-buy .content-page .btn {
+        margin-left: 35%;
+        margin-top: 3%;
+        font-family: sans-serif;
+        font-weight: 0;
+        font-size: 1rem;
+        padding: 1% 10%;
+        color: #fff;
+        background-color: #38684A;
+        border: solid #38684A;
+        box-shadow: rgba(0, 0, 0, 0.2) 1rem 1rem 1rem;
+        border-radius: 1rem;
+        cursor: pointer; }
+      body .s-page-buy .content-page .btn:hover {
+        padding: 1% 5%;
+        background-color: #fff;
+        color: #38684A;
+        border: solid #38684A; }
     body .s-page-buy .slider-product {
-      padding: 10%; }
-      body .s-page-buy .slider-product .carousel-inner {
-        border-radius: 12%; }
-        body .s-page-buy .slider-product .carousel-inner .img-product {
-          border-radius: 10%;
-          padding: 1%; }
-        body .s-page-buy .slider-product .carousel-inner .carousel-control-prev-icon {
-          background-color: #0cd857;
-          border-radius: 1rem; }
-        body .s-page-buy .slider-product .carousel-inner .carousel-control-next-icon {
-          background-color: #0cd857;
-          border-radius: 1rem; }
-  body .acordeon-d {
-    margin: 10%;
-    margin-bottom: 10%; }
-    body .acordeon-d .acordeon-a {
-      background-color: #38684A;
-      color: #fff; }
-      body .acordeon-d .acordeon-a .acordeon-d::after {
-        background-color: #18181a; }
-    body .acordeon-d .accordion-st {
-      font-size: 1rem;
-      letter-spacing: normal;
-      margin: 0; }
+      width: 100%;
+      margin-left: 0; }
+      body .s-page-buy .slider-product .img-product {
+        border-radius: 1rem; }
+      body .s-page-buy .slider-product .carousel-control-prev-icon {
+        background-color: #00ff0d;
+        margin-left: -1rem;
+        border-radius: 3rem; }
+      body .s-page-buy .slider-product .carousel-control-next-icon {
+        background-color: #00ff0d;
+        border-radius: 3rem;
+        margin-left: 1rem; }
   body .footer {
     background-color: #38684A;
     z-index: 2000; }

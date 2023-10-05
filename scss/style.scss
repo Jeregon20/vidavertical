@@ -195,62 +195,121 @@ body {
    }
 }
  /*PAGINA DE COMPRA*/
-.s-page-buy{
-    font-size: 1,5rem;
-    margin:0;
-    font-family: nth( $fuentes, 4 );
-    background-color: white;
-    flex-direction: column;
-    .content-page{ 
-      .left-section{
-        
-        .p-h1{
-            font-family: nth( $fuentes, 1 );
-            margin: 10%;
-            font-weight: bold}
-            .btn{
-              @include btn;
+ .s-page-buy {
+  height: 100%; // Cambiar la altura a 100% para llenar la pantalla
+  transition: all ease .55s;
+  font-size: 1rem; // Cambiar el tamaño de fuente a rem
+  margin: 0;
+  font-family: nth($fuentes, 4);
+  background-color: white;
+
+  @media (max-width: 767px) {
+    height: auto; // Cambiar la altura a automático para el contenido móvil
+    font-size: 1rem; // Cambiar el tamaño de fuente a rem
+
+    .content-page {
+      flex-direction: column; // Cambiar a columna para dispositivos móviles
+      align-items: center; // Centrar elementos en dispositivos móviles
+
+      .left-section, .right-section {
+        width: 100%; // Ancho completo para dispositivos móviles
+        margin: 0; // Eliminar márgenes para dispositivos móviles
+      }
+
+      .p-h1 {
+        margin: 2rem 0; // Agregar margen superior e inferior
+      }
+
+      .btn {
+        width: 50%; // Ancho completo para dispositivos móviles
+        margin: 1rem ; // Agregar margen superior e inferior
+      }
+
+      .slider-product {
+        width: 100%; // Ancho completo para dispositivos móviles
+        margin-left: 0; // Eliminar margen izquierdo
       }
     }
-  }    
- .slider-product{
-   padding: 10%;
-      .carousel-inner{
-          border-radius: 12%;
-        .img-product
-                {
-          border-radius: 10%;
-          padding: 1%;         
-                }
-                
-                .carousel-control-prev-icon{
-                  background-color: map-get($carousel-bgcolor, carousel-color );
-                  border-radius: 1rem;
-                }
-                .carousel-control-next-icon{
-                  background-color: map-get($carousel-bgcolor, carousel-color );
-                  border-radius: 1rem;
-                }
-            }
-          }
-        }
-/*ACORDEON*/
-.acordeon-d{
-    margin: 10%;
-    margin-bottom: 10%;
-    .acordeon-a{
-        background-color:  $color-principal;
+
+    .acordeon-d {
+      margin: 2rem 3rem; // Agregar margen superior e inferior
+      width:50%;
+      .accordion-item {
+        border: none;
+      }
+
+      .acordeon-a {
+        background-color: $color-principal;
         color: #fff;
-        .acordeon-d::after{
-            background-color: #18181a;
-          }
+        padding: 1rem; // Cambiar el relleno a rem
+
+        .acordeon-d::after {
+          background-color: #18181a;
+        }
       }
-      .accordion-st{
-        font-size: 1rem;
-        letter-spacing: normal;
-        margin: 0;
-      }
+    }
   }
+
+  .content-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .left-section {
+      width: 70%; // Cambiar el ancho a porcentaje
+      /* Estilos adicionales para la sección izquierda */
+    }
+
+    .right-section {
+      margin-left: 5%;
+      margin-bottom: 1%;
+      width: 90%; // Cambiar el ancho a porcentaje
+      /* Estilos adicionales para la sección derecha (slider-product) */
+    }
+
+    .p-h1 {
+      font-family: nth($fuentes, 1);
+      margin-left: 10%; // Cambiar márgenes a porcentaje
+      margin-top: 5%; // Cambiar márgenes a porcentaje
+      margin-bottom: 5%; // Cambiar márgenes a porcentaje
+      font-weight: bold;
+    }
+
+    .btn {
+      @include btn;
+    }
+
+    .btn:hover {
+      padding: 1% 5%; // Cambiar el relleno a porcentaje
+      background-color: #fff;
+      color: $color-principal;
+      border: solid $color-principal;
+    }
+  }
+
+  .slider-product {
+    width: 100%; // Ancho completo para dispositivos móviles
+    margin-left: 0; // Eliminar margen izquierdo
+
+    .img-product {
+      border-radius: 1rem; // Cambiar el radio del borde a rem
+    }
+
+    .carousel-control-prev-icon {
+      background-color: rgb(0, 255, 13);
+      margin-left: -1rem; // Cambiar margen izquierdo a rem
+      border-radius: 3rem; // Cambiar el radio del borde a rem
+    }
+
+    .carousel-control-next-icon {
+      background-color: rgb(0, 255, 13);
+      border-radius: 3rem; // Cambiar el radio del borde a rem
+      margin-left: 1rem; // Cambiar margen izquierdo a rem
+    }
+  }
+}
+
+
   /* footer */
 .footer{
     background-color:  $color-principal;
@@ -932,4 +991,3 @@ body {
                         }
     
                   }
-                 
